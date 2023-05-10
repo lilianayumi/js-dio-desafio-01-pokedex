@@ -2,7 +2,7 @@ function convertPokemonProfileToHtml(profile) {
     return `
         <div class="pokemon ${profile.type}">
             <div class="header">
-                <a id="backButton" type="button" href="pokemon-index.html">↩</a>
+                <a id="backButton" type="button" href="index.html">↩</a>
                 <div class="like">♡</div>
             </div>
             <div class="details">
