@@ -1,0 +1,157 @@
+.pokemon{
+    color: black;
+    border-radius: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.pokemon .header {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 0 0.5rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header a {
+    text-decoration: none;
+    color: #fff;
+}
+.pokemon .details {
+    margin:  0.5rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #fff;
+    position: relative;
+}
+.details .name {
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+.details .number {
+    align-self: flex-end;
+    text-align: right;
+    font-size: 1rem;
+}
+.pokemon .details .image {
+    max-width: 35%;
+    align-self: center;
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+}
+.details .types {
+    display: flex;
+    gap: 1.5rem;
+}
+.details .type {
+    filter: brightness(1.15);
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin: 0.25rem 0;
+    border-radius: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+.pokemon .profile {
+    width: 100%;
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+    background-color: #fff;
+    border-radius: 2.5rem;
+    margin-top: 50%;
+}
+.profile .titles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+}
+button {
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 10px 10px 0 0;
+    background-color: #fff;
+    border: none;
+}
+button:hover{
+    filter: brightness(90%);
+}
+.line {
+    border-bottom: solid 0.5px rgba(0, 0, 0, 0.2);
+}
+.table {
+    display: grid;
+    margin-top: 1.5rem;
+    grid-template-columns: repeat(2, 100%);
+    grid-auto-flow: column;
+    overflow-x: hidden;
+    margin: 3rem auto;
+    white-space: nowrap; 
+}
+.table-about, .table-stats {
+    display: flex;
+    gap: 3rem;
+}
+.table-about .item ol, .table-about .info ol, .table-stats ol{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-transform: capitalize;
+}
+.profile .info .abilities, .profile .info .egg-groups {
+    gap: 0.2rem;
+    flex-direction: row;
+    background-color: #fff !important;
+}
+.profile .info .evolution {
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+}
+.evolution li {
+    display: flex;
+    justify-content: center;
+}
+.evolution img {
+    width: 50%;
+}
+.bar {
+    width: 80px;
+    height: 18.3px;
+    background-color: #eee;
+    border-radius: 10px;
+}
+.progress {
+    height: 100%;
+    border-radius: 10px;
+}
+.gender {
+    display: flex;
+    align-items: center;
+}
+.gender img {
+    width: 18.4px
+}
+@media screen and (min-width: 400px) {
+    .pokemon .profile {
+        margin-top: 40%;
+    }
+    .bar {
+        width: 150px;
+    }
+}
+@media screen and (min-width: 600px) {
+    .pokemon .profile {
+        margin-top: 30%;
+    }
+    .bar {
+        width: 250px;
+    }
+}
